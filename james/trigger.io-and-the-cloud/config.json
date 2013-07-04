@@ -1,0 +1,46 @@
+{
+	"name": "Trigger.io and the Cloud",
+	"description": "Demo for Turin",
+	"author": "james@trigger.io",
+	"version": "0.1",
+	"platform_version": "v1.4",
+	"modules": {
+		"contact": true,
+		"display": {
+			"fullscreen": {
+				"android": true,
+				"ios": true
+			}
+		},
+		"file": true,
+		"icons": {
+			"android": {
+				"36": "icons/T-36.png",
+				"48": "icons/T-48.png",
+				"72": "icons/T-72.png"
+			},
+			"ios": {
+				"57": "icons/T-57.png",
+				"72": "icons/T-72.png",
+				"114": "icons/T-114.png",
+				"144": "icons/T-144.png",
+				"512": "icons/T-512.png"
+			}
+		},
+		"is": true,
+		"logging": {
+			"level": "DEBUG"
+		},
+		"prefs": true,
+		"reload": true,
+		"request": {
+			"permissions": [
+				"http://*/*",
+				"https://*/*"
+			]
+		},
+		"tools": true
+	},
+	"plugins": {},
+	"config_version": "2"
+}
