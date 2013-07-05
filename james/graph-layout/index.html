@@ -37,144 +37,232 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 
 			<div class="slides">
-			    <section>
-			        <h1>Flowcharts:</h1>
-			        <h2>can a computer make them pretty?</h2>
-			    </section>
-			    <section>
-			        <h2>Flowcharts, visual instructions, recipe diagrams, &hellip;</h2>
-			        <div>
-			            <ul>
-			                <li class="fragment">directed, <span class="de-emphasise">potentially-</span>cyclic graphs</li>
-			                <li class="fragment">single start-node, single end-node</li>
-			                <li class="fragment"></li>
-			            </ul>
-			        </div>
-			    </section>
-			    <section>
-				    <section>
-				        <h2>What is Trigger.io?</h2>
-				        <div>
-				            <ul>
-				                <li class="fragment"><span class="de-emphasise">Built for</span> web developers</li>
-				                <li class="fragment"><span class="de-emphasise">Built for</span> rapid development cycle</li>
-				                <li class="fragment"><span class="de-emphasise">Built for</span> high-quality results</li>
-				                <li class="fragment"><span class="de-emphasise">Go to</span> http://trigger.io/</li>
-				            </ul>
-				        </div>
-				    </section>
-				    <section>
-				        <h2>Architecture of a Trigger.io app</h2>
-				        <div>
-			                <img src="images/architecture.png">
-				        </div>
-				    </section>
-			    </section>
-			    <section>
-			        <section>
-			            <h2>Cloud-based compilation</h2>
-			            <div>
-			                <ul>
-			                    <li>Why?</li>
-			                    <li>How?</li>
-			                    <li>Demo</li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section>
-			            <h2><span class="de-emphasise">Cloud-based compilation:</span> <span class="emphasise">why?</span></h2>
-			            <div>
-			                <ul>
-			                    <li class="fragment">Xcode and Eclipse</li>
-			                    <li class="fragment">development environment</li>
-			                    <li class="fragment">build caching</li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section>
-			            <h2><span class="de-emphasise">Cloud-based compilation:</span> <span class="emphasise">how?</span></h2>
-			            <div>
-			                <img src="images/builds.png">
-			                <br>
-			            </div>
-			        </section>
-			        <section>
-			            <h2><span class="de-emphasise">Cloud-based compilation:</span> <span class="emphasise">demo!</span></h2>
-			        </section>
-			    </section>
-			    <section>
-			        <section>
-			            <h2>Cloud-based previews</h2>
-			            <div>
-			                <ul>
-			                    <li>Why?</li>
-			                    <li>How?</li>
-			                    <li>Demo</li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section>
-			            <h2><span class="de-emphasise">Cloud-based previews:</span> <span class="emphasise">why?</span></h2>
-			            <div>
-			                <ul>
-			                    <li class="fragment">try before you buy</li>
-			                    <li class="fragment">fast development cycle</li>
-			                    <li class="fragment">usable from any device</li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section>
-			            <h2><span class="de-emphasise">Cloud-based previews:</span> <span class="emphasise">how?</span></h2>
-			            <div>
-			                <ul>
-			                    <li class="fragment">just static HTML / CSS / JS</li>
-			                    <li class="fragment">Node.js as proxy</li>
-			                    <li class="fragment">deploy to Heroku</li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section>
-			            <h2><span class="de-emphasise">Cloud-based previews:</span> <span class="emphasise">demo!</span></h2>
-			        </section>
-			    </section>
-			    <section>
-			        <section>
-			            <h2>Cloud-based deployment</h2>
-			            <div>
-			                <ul>
-			                    <li>Why?</li>
-			                    <li>How?</li>
-			                    <li>Demo</li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section>
-			            <h2><span class="de-emphasise">Cloud-based deployment:</span> <span class="emphasise">why?</span></h2>
-			            <div>
-			                <ul>
-			                    <li class="fragment">App Store delay</li>
-			                    <li class="fragment">distribution to testers</li>
-			                    <li class="fragment">A/B test your users</li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section>
-			            <h2><span class="de-emphasise">Cloud-based deployment:</span> <span class="emphasise">how?</span></h2>
-			            <div>
-			                <img src="images/reload.png">
-			                <br>
-			            </div>
-			        </section>
-			        <section>
-			            <h2><span class="de-emphasise">Cloud-based deployment:</span> <span class="emphasise">demo!</span></h2>
-			        </section>
-			    </section>
-			    <section>
-			        <h1>Questions?</h1>
-			    </section>
+				<section>
+					<h1>Flowcharts:</h1>
+					<h2>can a computer make them pretty?</h2>
+				</section>
+				<section>
+					<h2>Flowcharts, visual instructions, recipe diagrams, &hellip;</h2>
+					<div>
+						<ul>
+							<li class="fragment">directed graph</li>
+							<li class="fragment">potentially cyclic</li>
+							<li class="fragment">single start-node, single end-node</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h2>What does pretty mean?</h2>
+						<div>
+							<ul>
+								<li class="fragment">minimise crossing edges</li>
+								<li class="fragment">even spacing between peers</li>
+								<li class="fragment">one axis is progress towards goal <span style="font-size: 50%" class="de-emphasise">(except for cycles)</span></li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h3 class="de-emphasise">What does pretty mean?</h3>
+						<h2>Minimise crossing edges</h2>
+						<div>
+							<figure>
+								<img src="images/crossed.png"/>
+								<figcaption>BAD</figcaption>
+							</figure>
+							<figure>
+								<img src="images/no-crossed.png"/>
+								<figcaption>GOOD</figcaption>
+							</figure>
+						</div>
+					</section>
+					<section>
+						<h3 class="de-emphasise">What does pretty mean?</h3>
+						<h2>Even spacing between peers</h2>
+						<div>
+							<figure>
+								<img src="images/uneven-spacing.png"/>
+								<figcaption>BAD</figcaption>
+							</figure>
+							<figure>
+								<img src="images/even-spacing.png"/>
+								<figcaption>GOOD</figcaption>
+							</figure>
+						</div>
+					</section>
+					<section>
+						<h3 class="de-emphasise">What does pretty mean?</h3>
+						<h2>One axis is progress towards goal</h2>
+						<div>
+							<figure>
+								<img src="images/backtrack.png"/>
+								<figcaption>BAD</figcaption>
+							</figure>
+							<figure>
+								<img src="images/no-backtrack.png"/>
+								<figcaption>GOOD</figcaption>
+							</figure>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h2>Going to talk about:</h2>
+					<div>
+						<ul>
+							<li>the "algorithm"</li>
+							<li>an interesting graph algorithm</li>
+							<li>pleasant JavaScript surprise</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h2>The algorithm</h2>
+						<h3 class='de-emphasise'>a.k.a. an ordered collection of special cases</h3>
+						<div>
+							<ul>
+								<li class="fragment">make it work <span style="color: green" class="fragment">&#10004;</span> <span class="fragment">/  <span style="color: red" class="fragment">&times;</span></span></li>
+								<li class="fragment">make it good <span style="color: red" class="fragment">&times;</span></li>
+								<li class="fragment">make it fast <span style="color: red" class="fragment">&times;</span></li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>Initial sanity checking</h2>
+						<div>
+							<ul>
+								<li>refuse to accept cyclical graphs, because hard</li>
+								<li>require one start node; one end node</li>
+								<li>no orphaned nodes</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>For example...</h2>
+						<div>
+							<img src="images/demo-initial.png" />
+						</div>
+					</section>
+					<section>
+						<h2>Work out distance from root</h2>
+						<div>
+							<img src="images/demo-with-distance.png" />
+						</div>
+					</section>
+					<section>
+						<h2>Work out initial top offset</h2>
+						<div>
+							<ul style="width: 43%">
+								<li>nodes are in ranks by distance</li>
+								<li>space ranks evenly top to bottom</li>
+							</ul>
+							<figure>
+								<img src="images/demo-with-top.png"/>
+							</figure>
+						</div>
+					</section>
+					<section>
+						<h2>Work out initial left offset</h2>
+						<div>
+							<ul style="width: 43%">
+								<li>imagine virtual row spanning nodes of the same rank</li>
+								<li>divide row evenly between these nodes</li>
+								<li>a few fiddly special cases</li>
+							</ul>
+							<figure>
+								<img src="images/demo-with-left.png"/>
+							</figure>
+						</div>
+					</section>
+					<section>
+						<h2>Let Springy do the rest</h2>
+						<div>
+							<img src="images/demo-done.png" />
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Finding cycles in a graph</h2>
+						<h3>An interesting algorithm</h3>
+					</section>
+					<section>
+						<h2>Tarjan's strongly connected components algorithm</h2>
+						<div>
+							<img style="float:right" src="http://upload.wikimedia.org/wikipedia/commons/6/60/Tarjan%27s_Algorithm_Animation.gif" />
+							<ul style="display: block">
+								<li>depth-first search</li>
+								<li>mark nodes with increasing index as you go</li>
+								<li>pop nodes onto stack as you go</li>
+								<li>if you get to a node that's in the stack&hellip;</li>
+								<li>...you've found a strongly-connected component</li>
+								<li>pop the stack until empty: it is a SCC</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>Finding cycles</h2>
+						<div>
+							<ul>
+								<li>a cycle is a SCC with &gt;1 nodes in it</li>
+								<li>if there are <em>&lt;N</em> SCCs in a graph, there is a cycle</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>A pleasant JavaScript surprise</h1>
+					</section>
+					<section>
+						<h3>The problem</h3>
+						<ul>
+							<li>want to invoke "super-class" constructor</li>
+							<li>maybe expecting different arguments</li>
+							<li>maybe the "child" wants to do more in its constructor</li>
+							<li>was expecting to need to name the "super-class" and invoke with <code>apply</code></li>
+						</ul>
+					</section>
+					<section>
+						<h3>The surprise</h3>
+						<ul>
+							<li><code>this.constructor</code> in "child" constructor</li>
+							<li>careful not to do <code>Child.prototype = Parent.prototype;</code></li>
+						</ul>
+					</section>
+					<section>
+						<pre>
+var Parent = function (food, drink) {
+	this.food = food;
+	this.drink = drink;
+};
+
+Parent.prototype.getDinner = function () {
+	return [this.food, this.drink];
+};
+
+var Child = function (food, drink, tv) {
+	this.tv = tv;
+	this.constructor(food, drink);
+};
+Child.prototype = new Parent;
+
+Child.prototype.getDinner = function () {
+	// still no nice way to do super.getDinner()
+	return [this.food, this.drink, this.tv];
+};
+
+var p = new Parent("caviar", "whiskey");
+var c = new Child("pizza", "pop", "A-Team");
+console.info(p.getDinner());
+console.info(c.getDinner());
+						</pre>
+					</section>
+				</section>
 			</div>
-
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
